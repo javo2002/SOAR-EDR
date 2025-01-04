@@ -4,9 +4,10 @@
 This repository contains the SOAREDR (Security Orchestration, Automation, and Response for Endpoint Detection and Response) playbook. The playbook is designed to guide users through the process of handling security incidents, specifically focusing on isolating potentially compromised systems and communicating with users.
 
 ## Logical Diagram
-<div style="text-align:center;">
-    <img src="./soaredr.drawio.png" alt="Logical Diagram" width="600">
-</div>
+
+<p align="center">
+  <img src="./soaredr.drawio.png" alt="Logical Diagram" width="600">
+</p>
 
 The logical flow of the SOAREDR playbook is as follows:
 
