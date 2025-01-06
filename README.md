@@ -3,47 +3,69 @@
 ## Overview
 This repository contains the SOAREDR (Security Orchestration, Automation, and Response for Endpoint Detection and Response) playbook. The playbook is designed to guide users through the process of handling security incidents, specifically focusing on isolating potentially compromised systems and communicating with users.
 
+---
+
 ## Logical Diagram
 
 <p align="center">
   <img src="./soaredr.drawio.png" alt="Logical Diagram" width="600">
 </p>
 
-The logical flow of the SOAREDR playbook is as follows:
 
-1. **Message with Details Contains**: The process starts when a message containing specific details is received.
-2. **LineCharlie**: The message is associated with LineCharlie, which is likely a reference to a specific communication channel or protocol.
-3. **Dateation (All-Edit)**: The date and time of the incident are recorded for documentation purposes.
-4. **Lines**: The message is parsed to extract relevant lines of information.
-5. **Save Message with Details**: The message, along with its details, is saved for future reference.
-6. **Send Message with Details**: The message is forwarded to the appropriate team or system for further action.
-7. **Back**: If the user does not want to proceed, the process can be reversed or stopped.
-8. **Does the User Want to Receive Machine**: The user is prompted to decide if they want to receive a machine (possibly a virtual machine or a secure environment).
-   - **Yes**: If the user agrees, the process continues.
-   - **No**: If the user declines, the process may be halted or redirected.
-9. **If the Computer-Computer-Vres Not Isolated, Please Investigate**: If the system in question is not isolated, further investigation is required.
-10. **Location Learning**: The system learns the location of the incident for better context.
-11. **LineCharlie**: The incident is again associated with LineCharlie for tracking.
-12. **Slack**: Communication via Slack is initiated to coordinate the response.
-13. **Position Status:4**: The status of the incident is updated to position 4, indicating a specific stage in the response process.
-14. **If No Computer-Computers Has Been Isolated**: If no systems have been isolated, the process may loop back to earlier steps or trigger additional actions.
-
-## Usage
-
-To use this playbook, follow the logical diagram and steps outlined above. Ensure that all messages are properly documented and that communication channels like Slack are utilized effectively for coordination.
-
-## Contributing
-
-Contributions to this playbook are welcome. Please fork the repository and submit a pull request with your changes.
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## Contact
-
-For any questions or further information, please contact the repository maintainer.
+### Logical Flow  
+1. **Event Logs**: The process begins when LimaCharlie’s detection and response functions are triggered by specific event logs.  
+2. **LimaCharlie Integration to SOAR**: The alert is integrated into the Tines (SOAR) platform to initiate a playbook.  
+3. **Internal Communication**: The alert is automatically broadcast to communication platforms (Slack, Email).  
+4. **User Prompt**: The SOC Analyst investigates the alert. A user prompt provides Boolean values to determine if endpoint isolation is needed.  
+   - **Yes**: The computer is isolated, and an update is sent to communication platforms.  
+   - **No**: The computer remains on the network, and an update is sent to communication platforms.  
+5. **Message with Details**: A text box displays filtered information through playbook functions.  
 
 ---
 
-This README provides a high-level overview of the SOAREDR playbook and its logical flow. For more detailed instructions, refer to the specific steps and documentation within the repository.
+## Cloud OS Provisioning  
+For this lab, a **Windows 2022 server** is implemented in the **Vultr cloud environment** to simulate an infected machine. Firewall configurations ensure that access to this VM is restricted to the host IP address via **Remote Desktop Protocol (RDP) port 3389**.  
+
+The purpose of accessing this device is to simulate a malicious actor gaining unauthorized access to run malicious scripts. In this project, the **Lazagne** script kiddie penetration testing tool (obtained from GitHub) is used to test EDR capabilities.  
+
+---
+
+## Device Enrollment (LimaCharlie)  
+Device enrollment is critical for monitoring and protecting endpoints. Two methods are recommended based on network size:  
+
+### Manual Enrollment (Recommended for Small Networks)  
+For small networks, manual enrollment is straightforward. This is done through the LimaCharlie platform:  
+1. Use the **Installation Documentation** on the enrollment key page.  
+2. Utilize the provided enrollment key to install the LimaCharlie agent on the endpoint device.  
+
+### Automated Enrollment via Group Policy Objects (GPO) in Active Directory  
+For larger networks, automate enrollment using **Group Policy Objects (GPO)** in Active Directory. This method allows simultaneous enrollment of multiple devices.  
+
+---
+
+## Configuration  
+Once devices are enrolled, configure the following settings:  
+- **Sensors and Detections**: Configure sensors to collect relevant data and set up detections for potential security incidents.  
+- **Response Actions**: Define automated response actions for LimaCharlie to take when specific detections are triggered.  
+
+For this lab, a **Windows 2022 server** was manually configured as the only endpoint.  
+
+---
+
+## Tines Integration  
+Tines is integrated to automate workflows and responses. This involves:  
+- Developing workflows in Tines to automate responses to security incidents.  
+- Configuring triggers to initiate automated actions based on specific criteria.  
+
+### Developing a Playbook  
+The playbook development process includes:  
+1. **Incident Identification**: Define how incidents are identified and categorized.  
+2. **Response Actions**: Outline steps to be taken in response to different types of incidents.  
+3. **Communication Protocols**: Establish protocols for internal and external communication during an incident.
+
+---
+
+## Conclusion  
+The **SOAR-EDR playbook** is a comprehensive guide designed to enhance the efficiency and effectiveness of security incident response. By following the outlined steps and integrations, organizations can ensure a coordinated and automated approach to managing security incidents, minimizing potential damage, and improving overall security posture.  
+
+---
