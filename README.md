@@ -64,8 +64,3 @@ The playbook development process includes:
 3. **Communication Protocols**: Establish protocols for internal and external communication during an incident.
 
 ---
-
-## Conclusion  
-The **SOAR-EDR playbook** is a comprehensive guide designed to enhance the efficiency and effectiveness of security incident response. By following the outlined steps and integrations, organizations can ensure a coordinated and automated approach to managing security incidents, minimizing potential damage, and improving overall security posture.  
-
----
