@@ -1,7 +1,7 @@
-# SOAREDR Playbook
+# SOAR-EDR Project
 
 ## Overview
-This repository contains the SOAREDR (Security Orchestration, Automation, and Response for Endpoint Detection and Response) playbook. The playbook is designed to guide users through the process of handling security incidents, specifically focusing on isolating potentially compromised systems and communicating with users.
+This repository contains the SOAR-EDR (Security Orchestration, Automation, and Response for Endpoint Detection and Response) project influenced by **[MyDFIR]([https://www.youtube.com/watch?v=GWX19cpv21w](https://www.youtube.com/watch?v=Gs1pYJfWv7k))**. The playbook developed is designed to guide users through the process of handling security incidents, specifically focusing on isolating potentially compromised systems and communicating with users.
 
 ---
 
