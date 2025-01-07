@@ -23,7 +23,7 @@ This directory contains screenshots documenting the setup, configuration, and ex
   - Firewall settings to restrict access via RDP (port 3389).
 
 <p align="center">
-  <img src="./images/Screenshot 2.png" alt="screenshot 2" width="600">
+  <img src="./images/Screenshot 2 2.png" alt="screenshot 2" width="600">
 </p>
 
 ---
@@ -35,7 +35,7 @@ This directory contains screenshots documenting the setup, configuration, and ex
   - Rules for allowing specific protocols and ports (e.g., RDP on port 3389).
 
 <p align="center">
-  <img src="./images/Screenshot 3.png" alt="screenshot 3" width="600">
+  <img src="./images/Screenshot 3 2.png" alt="screenshot 3" width="600">
 </p>
 
 ---
@@ -46,7 +46,7 @@ This directory contains screenshots documenting the setup, configuration, and ex
   - Connecting to the VM via IP address `155.138.221.95`.
 
 <p align="center">
-  <img src="./images/Screenshot 4.png" alt="screenshot 4" width="600">
+  <img src="./images/Screenshot 4 2.png" alt="screenshot 4" width="600">
 </p>
 
 ---
@@ -58,7 +58,7 @@ This directory contains screenshots documenting the setup, configuration, and ex
   - Confirmation message: "Agent installed successfully!"
 
 <p align="center">
-  <img src="./images/Screenshot 4a.png" alt="screenshot 4a" width="600">
+  <img src="./images/Screenshot 4a 2.png" alt="screenshot 4a" width="600">
 </p>
 
 ---
@@ -70,7 +70,7 @@ This directory contains screenshots documenting the setup, configuration, and ex
   - Output includes decrypted system masterkeys and password hashes.
 
 <p align="center">
-  <img src="./images/Screenshot 4b.png" alt="screenshot 4b" width="600">
+  <img src="./images/Screenshot 4b 2.png" alt="screenshot 4b" width="600">
 </p>
 
 ---
@@ -82,7 +82,7 @@ This directory contains screenshots documenting the setup, configuration, and ex
   - Real-time event collection and artifact monitoring.
 
 <p align="center">
-  <img src="./images/Screenshot 6.png" alt="screenshot 6" width="600">
+  <img src="./images/Screenshot 6 2.png" alt="screenshot 6" width="600">
 </p>
 
 ---
@@ -94,7 +94,7 @@ This directory contains screenshots documenting the setup, configuration, and ex
   - Example: Detection of `LaZagne.exe` and related processes.
 
 <p align="center">
-  <img src="./images/Screenshot 7.png" alt="screenshot 7" width="600">
+  <img src="./images/Screenshot 7 2.png" alt="screenshot 7" width="600">
 </p>
 
 ---
@@ -106,7 +106,7 @@ This directory contains screenshots documenting the setup, configuration, and ex
   - Example: Rule to detect the execution of `LaZagne.exe`.
 
 <p align="center">
-  <img src="./images/Screenshot 8.png" alt="screenshot 8" width="600">
+  <img src="./images/Screenshot 8 2.png" alt="screenshot 8" width="600">
 </p>
 
 ---
@@ -118,7 +118,7 @@ This directory contains screenshots documenting the setup, configuration, and ex
   - Metadata includes author, description, and tags (e.g., `attack.credential_access`).
 
 <p align="center">
-  <img src="./images/Screenshot 9.png" alt="screenshot 9" width="600">
+  <img src="./images/Screenshot 9 2.png" alt="screenshot 9" width="600">
 </p>
 
 ---
@@ -130,7 +130,7 @@ This directory contains screenshots documenting the setup, configuration, and ex
   - Stream detections and events to external tools (e.g., Slack, S3).
 
 <p align="center">
-  <img src="./images/Screenshot 10.png" alt="screenshot 10" width="600">
+  <img src="./images/Screenshot 10 2.png" alt="screenshot 10" width="600">
 </p>
 
 ---
@@ -142,7 +142,7 @@ This directory contains screenshots documenting the setup, configuration, and ex
   - Includes credentials for Slack and LimaCharlie integrations.
 
 <p align="center">
-  <img src="./images/Screenshot 11.png" alt="screenshot 11" width="600">
+  <img src="./images/Screenshot 11 2.png" alt="screenshot 11" width="600">
 </p>
 
 ---
@@ -154,7 +154,7 @@ This directory contains screenshots documenting the setup, configuration, and ex
   - Includes details such as computer name, source IP, file path, and detection link.
 
 <p align="center">
-  <img src="./images/Screenshot 12.png" alt="screenshot 12" width="600">
+  <img src="./images/Screenshot 12 2.png" alt="screenshot 12" width="600">
 </p>
 
 ---
@@ -166,7 +166,7 @@ This directory contains screenshots documenting the setup, configuration, and ex
   - Includes hostname, platform, network access, and sensor ID.
 
 <p align="center">
-  <img src="./images/Screenshot 13.png" alt="screenshot 13" width="600">
+  <img src="./images/Screenshot 13 2.png" alt="screenshot 13" width="600">
 </p>
 
 ---
@@ -178,7 +178,7 @@ This directory contains screenshots documenting the setup, configuration, and ex
   - Includes user prompts and confirmation of computer isolation.
 
 <p align="center">
-  <img src="./images/Screenshot 14.png" alt="screenshot 14" width="600">
+  <img src="./images/Screenshot 14 2.png" alt="screenshot 14" width="600">
 </p>
 
 ---
@@ -190,7 +190,7 @@ This directory contains screenshots documenting the setup, configuration, and ex
   - Includes HTTP requests and actions for isolation status.
 
 <p align="center">
-  <img src="./images/Screenshot 14a.png" alt="screenshot 14a" width="600">
+  <img src="./images/Screenshot 14a 2.png" alt="screenshot 14a" width="600">
 </p>
 
 ---
