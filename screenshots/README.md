@@ -204,5 +204,3 @@ This directory contains screenshots documenting the setup, configuration, and ex
 <p align="center">
   <img src="./images/Screenshot 15 2.png" alt="screenshot 15" width="600">
 </p>
-
----
