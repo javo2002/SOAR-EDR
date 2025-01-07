@@ -206,5 +206,3 @@ This directory contains screenshots documenting the setup, configuration, and ex
 </p>
 
 ---
-
-This README provides a high-level overview of the screenshots and their relevance to the SOAR-EDR project. For more details, refer to the individual screenshots and the associated documentation.
